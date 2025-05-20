@@ -2,7 +2,7 @@
 https://docs.google.com/spreadsheets/d/1u_25Gd_lli0m9SQwrfNZfDM0U4rJoiFz8gLRuFps1us/edit?gid=1228681343#gid=1228681343
 https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5Vv5/introduction-to-deployment-platforms
 
-"C:\Users\MUSSARRAT KHATOON\Downloads\google-ml-nuts\decisiontress-airline-unsupervised\anotated-churn"
+
 - pipeline -
 - Model development
   - - framework choice - the ability of framework to scale with project demands
@@ -12,3 +12,6 @@ https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5
 - Maintain: App Insights and Monitor (Data Drift) - Continuous monitoring helps ensure the model remains accurate and effective, allowing for timely adjustments if performance issues arise.
 
   * AutoML - automatically select and tunes best performing model
+
+  - Data access - API, Webscraping, git, link, external, open source
+    *  RAG enables AI to retrieve fresh, relevant data from external sources, enhancing the generated content’s accuracy and relevance.
