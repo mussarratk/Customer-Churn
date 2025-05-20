@@ -13,5 +13,17 @@ https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5
 
   * AutoML - automatically select and tunes best performing model
 
-  - Data access - API, Webscraping, git, link, external, open source
-    *  RAG enables AI to retrieve fresh, relevant data from external sources, enhancing the generated content’s accuracy and relevance.
+  - Data access - API, Webscraping, DB, sensor, IoT git, link, external, open source
+  
+      *  RAG enables AI to retrieve fresh (real-time), relevant data from external sources, enhancing the generated content’s accuracy and relevance.
+      *  https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/supplement/AMEqp/comparison-of-data-sources-for-rag-and-traditional-ml-pipelines
+
+ - The main purpose of data encryption is to safeguard sensitive data from unauthorized access, ensuring privacy and security.RBAC is a widely used method for managing user access to sensitive data based on their roles within the organization.
+ - Data Management
+  - - Data quality -To improve the accuracy and reliability of the AI models
+   -- Data governance ensures responsible usage of data, compliance with regulations, and overall data quality throughout its life cycle.
+   -- https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/supplement/Nu3A7/practice-activity-auditing-ml-code-for-security-vulnerabilities
+   -- https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/supplement/Nu3A7/practice-activity-auditing-ml-code-for-security-vulnerabilities
+
+- ML framework
+  * Tensorflow, Pytorch, Keras, Scikit-learn, Apache Spark MLlib, Azure ML SDK
