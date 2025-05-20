@@ -1,6 +1,8 @@
 # Customer-Churn Project AI/ML- Framework AML SDK V2
 https://docs.google.com/spreadsheets/d/1u_25Gd_lli0m9SQwrfNZfDM0U4rJoiFz8gLRuFps1us/edit?gid=1228681343#gid=1228681343
 https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5Vv5/introduction-to-deployment-platforms
+
+"C:\Users\MUSSARRAT KHATOON\Downloads\google-ml-nuts\decisiontress-airline-unsupervised\anotated-churn"
 - pipeline -
 - Model development
   - - framework choice - the ability of framework to scale with project demands
