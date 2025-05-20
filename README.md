@@ -1,6 +1,10 @@
 # Customer-Churn Project AI/ML- Framework AML SDK V2
+in 3 framework - https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/supplement/XtdhM/practice-activity-implementing-a-model-for-business-deployment
 https://docs.google.com/spreadsheets/d/1u_25Gd_lli0m9SQwrfNZfDM0U4rJoiFz8gLRuFps1us/edit?gid=1228681343#gid=1228681343
 https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5Vv5/introduction-to-deployment-platforms
+
+<details>
+  
 
 
 - pipeline -
@@ -27,3 +31,19 @@ https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5
 
 - ML framework
   * Tensorflow, Pytorch, Keras, Scikit-learn, Apache Spark MLlib, Azure ML SDK
+  * Define - Model Type : deep learning task - tensflow/pytorch - large scale - GPU/TPU - cloud - edge
+            -- classical ml algorithm - DT, SVM - small/medium - CPU - sk-learn
+    
+- Azure
+    - https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/supplement/qJvih/selecting-the-right-model-deployment-strategy-in-microsoft-azure
+ 
+- Pretrained LLM Model -  Pretrained LLMs can be fine-tuned for customer service tasks, allowing them to understand and respond to queries quickly and accurately, leading to improved customer satisfaction.
+    -- T5 - analyze
+    -- gpt n bert
+
+- Implementing Models - prep, deploy, monitor - https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/supplement/mwEGm/introduction-to-implementing-models
+
+
+
+
+</details>
