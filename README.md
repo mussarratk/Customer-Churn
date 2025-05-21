@@ -13,6 +13,9 @@ https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5
 
 ![image](https://github.com/user-attachments/assets/360f2be0-2478-4f2b-baec-223c89947924)
 
+- Pipeline jobs
+![image](https://github.com/user-attachments/assets/ce201a36-d2c4-4601-8e6f-74d767da46db)
+
 
 
 
