@@ -4,6 +4,45 @@ in 3 framework - https://www.coursera.org/learn/foundations-of-ai-and-machine-le
 https://docs.google.com/spreadsheets/d/1u_25Gd_lli0m9SQwrfNZfDM0U4rJoiFz8gLRuFps1us/edit?gid=1228681343#gid=1228681343
 https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5Vv5/introduction-to-deployment-platforms
 
+-------------------------------------------------------------------------------------------------------------------------
+- component
+
+![image](https://github.com/user-attachments/assets/950f88ac-b0d4-42ca-932a-7e6430638bdf)
+![image](https://github.com/user-attachments/assets/04553556-c10f-41fe-a96f-2bf6d51b97bb)
+![image](https://github.com/user-attachments/assets/cfe8d3b4-a3b6-47ab-85a0-abee60d25bd4)
+
+![image](https://github.com/user-attachments/assets/360f2be0-2478-4f2b-baec-223c89947924)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
 <details>
   
 
