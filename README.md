@@ -16,7 +16,23 @@ https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5
 - Pipeline jobs
 ![image](https://github.com/user-attachments/assets/ce201a36-d2c4-4601-8e6f-74d767da46db)
 
+![image](https://github.com/user-attachments/assets/aebf7857-30f5-4f29-a6f2-4977f5ea7421)
+- Experiment Jobs
+![image](https://github.com/user-attachments/assets/fac1439d-3881-45f5-93dc-230da88f8878)
 
+
+- Data
+  -- churn csv I have created dataset by uploading csv
+  -- churn_blob_csv_default - I have created external blob storage and container there and uploaded the dataset
+![image](https://github.com/user-attachments/assets/d8c2416c-4d86-40e2-ad40-4c3ecf160e08)
+![image](https://github.com/user-attachments/assets/33c769aa-c381-4f47-be96-1b370087cf90)
+
+
+ - Custom Environment created
+
+![image](https://github.com/user-attachments/assets/1947dde9-63eb-4633-950c-2359267740c5)
+![image](https://github.com/user-attachments/assets/0f6e6264-15bc-45bb-b208-de8e6a18f15a)
+![image](https://github.com/user-attachments/assets/d492cd0c-f177-4c06-a557-7e3c8a79b7da)
 
 
 
