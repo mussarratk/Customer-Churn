@@ -20,6 +20,8 @@ https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5
 ![image](https://github.com/user-attachments/assets/aebf7857-30f5-4f29-a6f2-4977f5ea7421)
 ![image](https://github.com/user-attachments/assets/bf4cd8f4-9d59-4bfb-b7dc-ca1a9e93c4a0)
 
+![image](https://github.com/user-attachments/assets/4f0da376-ba1f-4507-b1c7-2ee90be43efc)
+
 
 - Experiment Jobs
 ![image](https://github.com/user-attachments/assets/fac1439d-3881-45f5-93dc-230da88f8878)
