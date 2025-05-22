@@ -29,6 +29,12 @@ https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5
   -- churn csv I have created dataset by uploading csv
   -- churn_blob_csv_default - I have created external blob storage and container there and uploaded the dataset
 ![image](https://github.com/user-attachments/assets/d8c2416c-4d86-40e2-ad40-4c3ecf160e08)
+![image](https://github.com/user-attachments/assets/dafac8fc-9985-46b4-b366-d834e52524b8)
+![image](https://github.com/user-attachments/assets/27fcb838-3a00-4f35-8e6b-a22bb682a470)
+![image](https://github.com/user-attachments/assets/7f286199-0c1d-4bda-9685-baed09a2931e)
+![image](https://github.com/user-attachments/assets/cc9a127c-bd06-4f3d-95bc-02601679544b)
+![image](https://github.com/user-attachments/assets/54ca06ab-4f87-4869-8eed-28f92eb8ee32)
+
 ![image](https://github.com/user-attachments/assets/33c769aa-c381-4f47-be96-1b370087cf90)
 
 
