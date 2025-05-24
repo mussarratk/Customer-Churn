@@ -53,6 +53,13 @@ Best ROC AUC score (from cross-validation): 0.8451
 
 <details>
 
+  metrics: accuracy (the proportion of correct predictions) and AUC (a measure of the model's ability to discriminate between classes)
+- The ROC curve plots the True Positive Rate (TPR) against the False Positive Rate (FPR) at various threshold settings.
+
+- AUC represents the degree or measure of separability. It tells us how much the model is capable of distinguishing between classes.
+
+- An AUC of 1.0 means the model perfectly distinguishes between the positive and negative classes.
+
 🔍 Understanding the Confusion Matrix
 The heatmap you shared is a confusion matrix, used to evaluate classification model performance:
 
