@@ -8,6 +8,17 @@ https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5
 Best parameters found: {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100, 'scale_pos_weight': 2.767475035663338, 'subsample': 0.7}
 Best ROC AUC score (from cross-validation): 0.8451
 
+--- Hyperparameter Tuning with GridSearchCV ---
+Calculated scale_pos_weight: 2.77
+
+Starting GridSearchCV fit. This might take a while...
+Fitting 5 folds for each of 9216 candidates, totalling 46080 fits
+GridSearchCV fit complete.
+
+--- GridSearchCV Results ---
+Best parameters found: {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100, 'scale_pos_weight': 2, 'subsample': 0.7}
+Best ROC AUC score (from cross-validation): 0.8435
+
 -------------------------------------------------------------------------------------------------------------------------
 - component
 
