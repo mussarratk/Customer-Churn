@@ -682,3 +682,27 @@ Improved efficiency: Models with fewer features are faster to train and use.
 In essence, "removing the least significant feature—i.e., the feature with the highest p-value" is a systematic way to prune your model by eliminating variables that don't seem to have a statistically reliable connection to what you're trying to predict.
   
 </details>
+
+<details>
+
+  Here's the summary of your Decision Tree Classifier's performance:
+
+Tree depth: 30
+Number of leaves: 1114
+Accuracy: 0.7289 (or 72.89%)
+Confusion Matrix:
+True Negatives (0,0): 836 (Correctly predicted non-churners)
+False Positives (0,1): 191 (Predicted churners, but they were non-churners)
+False Negatives (1,0): 191 (Predicted non-churners, but they were churners - this is critical for churn!)
+True Positives (1,1): 191 (Correctly predicted churners)
+Classification Report:
+Class 0 (Non-Churners): Precision 0.81, Recall 0.81, F1-score 0.81
+Class 1 (Churners): Precision 0.50, Recall 0.50, F1-score 0.50
+Accuracy: 0.73
+Macro Avg: 0.66 (P, R, F1)
+Weighted Avg: 0.73 (P, R, F1)
+Is the Decision Tree Classifier Appropriate?
+Yes, a Decision Tree Classifier is an appropriate type of model for binary classification problems like churn prediction. It is designed to handle categorical and numerical features and produces a classification output.
+
+However, the specific performance of this Decision Tree model indicates a problem, primarily related to overfitting and its handling of the imbalanced dataset.
+</details>
