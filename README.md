@@ -19,6 +19,16 @@ GridSearchCV fit complete.
 Best parameters found: {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100, 'scale_pos_weight': 2, 'subsample': 0.7}
 Best ROC AUC score (from cross-validation): 0.8435
 
+
+
+
+![image](https://github.com/user-attachments/assets/8dd60f37-cd96-4760-be1b-c83400afb965)
+![image](https://github.com/user-attachments/assets/95f9e97f-4fe6-4acd-97a8-8f0f2442efc2)
+
+
+
+
+
 -------------------------------------------------------------------------------------------------------------------------
 - component
 
