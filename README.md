@@ -25,6 +25,7 @@ Best ROC AUC score (from cross-validation): 0.8435
 ![image](https://github.com/user-attachments/assets/8dd60f37-cd96-4760-be1b-c83400afb965)
 ![image](https://github.com/user-attachments/assets/95f9e97f-4fe6-4acd-97a8-8f0f2442efc2)
 
+![image](https://github.com/user-attachments/assets/379e504d-e020-4f58-a33a-6f1354932201)
 
 
 
