@@ -846,3 +846,26 @@ This is the most impactful next step. Since the Random Forest offers a different
 Continue Feature Engineering and Selection: Always look for ways to improve your input data.
   
 </details>
+
+
+<details>
+
+
+ It consists of:
+
+data_prep.py: A Python script (based on your input, completed with full preprocessing) that handles data loading, cleaning, feature engineering (one-hot encoding, scaling), and splitting into training and testing sets.
+train.py: A Python script that performs hyperparameter tuning using GridSearchCV on a GradientBoostingClassifier (suitable for your churn dataset), evaluates model performance, and importantly, uses MLflow to log metrics (accuracy, R2, ROC AUC) and visualize performance by saving ROC and Confusion Matrix plots as artifacts. It also logs the best model.
+azure_ml_pipeline.py: A Python script that defines the Azure ML components for data_prep.py and train.py, sets up the environment, and orchestrates them into a scalable Azure ML pipeline.
+This setup embodies the key aspects of your CV statement:
+
+Robust Cloud ML Workflows: Defined by the Azure ML pipeline orchestrating distinct steps.
+Scalability: Azure ML components and pipelines run on managed compute, easily scaling from small experiments to large-scale training jobs.
+Integration: Components are integrated into a cohesive pipeline. MLflow integration within the scripts allows for seamless logging into Azure ML's tracking service.
+Reproducibility: Programmatic logging of data versions, hyperparameters, metrics, and model artifacts ensures that any experiment can be reproduced.
+Programmatic Metric/Artifact Logging: Explicitly handled by MLflow in train.py (logging metrics, ROC plot, confusion matrix plot, and the trained model).
+Performance Visualization: Generating and logging ROC and Confusion Matrix plots as artifacts.
+Continuous Monitoring & CI/CD: The logged metrics and artifacts in Azure ML provide the necessary inputs for monitoring model performance over time. The structured pipeline and artifact logging are fundamental for automated CI/CD pipelines (e.g., triggering retraining or deployment based on performance thresholds).
+
+This example demonstrates how to structure an ML workflow in Azure ML. When you run this pipeline in Azure ML, each step (data_prep_component and train_component) will execute as a separate job, and all MLflow logs (metrics, parameters, and artifacts like the ROC curve and confusion matrix plots) will be automatically tracked and visible in your Azure ML workspace. This centralizes all experiment results, providing the foundation for continuous monitoring and integration into CI/CD pipelines.
+
+</details>
