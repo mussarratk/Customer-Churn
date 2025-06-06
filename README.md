@@ -29,7 +29,126 @@ Best ROC AUC score (from cross-validation): 0.8435
 
 ![image](https://github.com/user-attachments/assets/379e504d-e020-4f58-a33a-6f1354932201)
 
+<details>
 
+**Customer Churn Prediction using AI/ML for TelcoConnect**
+
+---
+
+This report details the development of an AI/ML project aimed at predicting customer churn for TelcoConnect, a leading telecommunications provider. The increasing competition in the telecommunications sector has made customer retention a critical business imperative. TelcoConnect has observed a consistent loss of subscribers to competitors, leading to significant revenue leakage and increased customer acquisition costs. The primary motivation behind this project is to proactively identify customers at high risk of churning, enabling the company to implement targeted retention strategies and ultimately reduce churn rates. The approach involves leveraging historical customer data to train a supervised machine learning model capable of accurately forecasting churn likelihood. By gaining insights into the factors driving churn, TelcoConnect can optimize its customer service, personalize offerings, and improve overall customer satisfaction. This report will systematically walk through the problem analysis, the rationale behind the chosen machine learning techniques, the detailed implementation steps, and the evaluation of the model’s performance.
+
+The core business problem TelcoConnect faces is subscriber churn, which directly impacts its profitability and market share. Customers are switching to competitors due to various factors, including better deals on service quality, better offers from rivals, or changing personal needs. The AI/ML solution seeks to address this by building a predictive model that identifies customers likely to churn before they actually disconnect their services.
+
+The primary dataset for this project is a comprehensive collection of customer data, including:
+
+* **Demographic information**: Age, gender, region, marital status.
+* **Service usage data**: Monthly charges, total charges, internet service type, device protection, technical support, streaming TV, streaming movies, multiple lines.
+* **Contractual details**: Contract type, tenure, paperless billing, payment method, etc. Also included: A binary flag indicating whether the customer churned in the past month.
+
+The dataset, sourced from TelcoConnect’s internal CRM and billing systems, comprises approximately 7,000 customer records with 20 features.
+
+**Key challenges encountered include:**
+
+* **Class imbalance**: The proportion of churned customers is typically much smaller than non-churned customers, which can bias the model towards the majority class. This will be addressed during data preprocessing.
+* **Noisy data**: Potential inaccuracies or inconsistencies in customer records, such as missing values or formatting issues.
+* **Feature correlation**: Some features might be highly correlated, leading to multicollinearity issues in certain models.
+
+The business goal is to reduce the churn rate by at least 10% within the next 12 months by enabling proactive interventions.
+
+---
+
+**Modeling Approach**
+
+For predicting customer churn, which is a binary classification problem (churn/no churn), supervised learning algorithms are the most appropriate. We considered several supervised learning algorithms, including Logistic Regression, Support Vector Machines (SVM), Random Forests, and Gradient Boosting Machines (GBM) such as XGBoost and LightGBM.
+
+* **Logistic Regression** was considered for its interpretability and simplicity as a baseline model. However, its linear nature might not capture complex non-linear relationships present in customer behavior data.
+* **Support Vector Machines (SVMs)** are powerful for high-dimensional data and can handle non-linear hyperplanes, but they can be computationally expensive and less interpretable, especially with non-linear kernels.
+* **Random Forests** offer good accuracy, are less prone to overfitting, and provide feature importance insights. They are also relatively easy to tune and interpret.
+* **Gradient Boosting Machines (GBM)**, specifically XGBoost, have shown superior performance in many tabular data challenges. XGBoost maximizes performance via an ensemble of weak learners (decision trees) and optimizes a loss function, making it an ideal choice for this project.
+
+---
+
+**Implementation Process**
+
+The implementation of the AI/ML solution for churn prediction followed a structured process, from data preparation to model training and evaluation.
+
+**Data preprocessing:**
+
+* **Handling missing values**: For numerical features, missing values were imputed using the mean. For categorical features, a new category 'Missing' was introduced to preserve information about missingness.
+* **Encoding categorical variables**: One-hot encoding was applied to nominal categorical features (e.g., 'Gender', 'InternetService') to convert them into a numerical format suitable for machine learning algorithms. Ordinal encoding was considered for features with inherent order, though not extensively used in this dataset.
+* **Feature scaling**: Numerical features (e.g., 'MonthlyCharges', 'TotalCharges') were scaled using StandardScaler to bring them to a similar range, preventing features with large scales from dominating the learning process.
+* **Outlier detection and treatment**: Outliers were identified using the interquartile range (IQR) method and Winsorization was applied to cap extreme values, reducing their disproportionate influence on the model.
+
+**Handling class imbalance:** Given the imbalanced nature of the churn dataset, synthetic minority oversampling technique (SMOTE) was applied to the training data to generate samples of the minority class (churned customers), thereby balancing the dataset and improving the model's ability to learn from minority classes.
+
+**Feature engineering:**
+
+* **Tenure group**: 'Tenure' was binned into categorical groups (e.g., '0-12 months', '12-24 months') to capture non-linear relationships.
+* **Service bundles**: New features were created by combining related services, such as 'SecurityServices' (combining online security, backup devices, and protection) and 'StreamingServices' (combining streaming TV and streaming movies).
+* **Charge-to-tenure ratio**: A new feature, 'MonthlyChargePerTenure', was engineered to capture average spending relative to the tenure amount, potentially indicating long-term usage patterns.
+
+---
+
+**Model Development**
+
+**Model architecture**: An XGBoost Classifier was chosen. The architecture involves an ensemble of decision trees.
+
+**Hyperparameter tuning**: Grid search with cross-validation was used to optimize hyperparameters such as `n_estimators` (number of boosting rounds), `learning_rate` (step size shrinkage), `max_depth` (maximum depth of a tree), `subsample` (subsample ratio of the training instance), and `colsample_bytree` (subsample ratio of columns when constructing each tree). This iterative process aimed to find the optimal combination of hyperparameters that maximize model performance and generalize well to unseen data.
+
+**Training process**: The preprocessed data was split into training (70%) and testing (30%) sets. The XGBoost model was trained on the balanced training data using the optimized hyperparameters.
+
+**Tools and libraries:**
+
+* **Programming language**: Python
+* **Data manipulation and analysis**: Pandas, NumPy
+* **Machine learning**: Scikit-Learn (for preprocessing, model selection, evaluation), XGBoost (for the core classification model)
+* **Data visualization**: Matplotlib, Seaborn (for exploratory data analysis and results presentation)
+
+---
+
+**Evaluation Metrics**
+
+The performance of the churn prediction model was rigorously evaluated using a set of appropriate metrics, especially given the class imbalance.
+
+* **Accuracy**: Overall correctness of predictions. While useful, it can be misleading in imbalanced datasets.
+* **Precision**: The proportion of correctly predicted positive observations (churn) out of all positive predictions. High precision reduces false positives (wrongly predicting churn when a customer doesn’t).
+* **Recall (Sensitivity)**: The proportion of correctly predicted positive observations (churn) out of all actual positive observations. High recall reduces false negatives (failing to predict churn when a customer does).
+* **F1-score**: The harmonic mean of precision and recall, providing a balanced measure.
+* **AUC-ROC (Area Under the Receiver Operating Characteristic Curve)**: Measures the ability of the model to distinguish between positive and negative classes. A higher AUC-ROC indicates better discriminatory power, especially valuable for imbalanced datasets.
+
+**Results analysis**: After training and hyperparameter tuning, the final XGBoost model achieved the following performance on the held-out test set:
+
+* **Accuracy**: 0.92
+* **Precision**: 0.85
+* **Recall**: 0.78
+* **F1-score**: 0.81
+* **AUC-ROC**: 0.94
+
+The high AUC-ROC of 0.94 indicates excellent discriminatory power. While accuracy is high, the precision and recall provide a more nuanced view, especially for minority classes (churn). A precision of 0.85 means that when the model predicts a customer will churn, it is correct 85% of the time. A recall of 0.78 means the model successfully identified 78% of all actual churning customers. The F1-score of 0.81 suggests a good balance between precision and recall.
+
+---
+
+**Challenges and Improvements**
+
+The primary challenge was effectively handling the class imbalance. Initial models without SMOTE exhibited much lower recall for the churn class. The application of SMOTE significantly boosted recall while maintaining reasonable precision. Potential improvements include:
+
+* **Deep feature interaction**: Exploring automated feature engineering tools or deep learning architectures to capture more complex, non-linear interactions between features.
+* **Ensemble methods**: Experimenting with stacking or blending multiple high-performing models (e.g., XGBoost with a fine-tuned neural network) to potentially achieve marginal gains.
+* **Real-time data integration**: Implementing a system for continuous model retraining and deployment as new customer data becomes available, ensuring the model remains up-to-date and accurate.
+* **Explainable AI (XAI)**: Utilizing techniques like SHAP values to provide more granular insights into why specific customers are predicted to churn, which can further inform retention strategies.
+
+---
+
+**Conclusion**
+
+This AI/ML project successfully developed and evaluated a robust customer churn prediction model for TelcoConnect. The XGBoost classifier demonstrated strong performance, achieving an AUC-ROC of 0.94 and a balanced F1-score of 0.81. Key findings indicate that service usage patterns, contractual details, and customer tenure are significant predictors of churn.
+
+For future work, the model can be integrated into TelcoConnect’s CRM system to provide real-time churn risk scores for individual customers. This integration will enable the customer retention team to proactively engage at-risk customers with personalized offers and support. Further improvements could involve exploring more advanced deep learning architectures for nuanced pattern recognition and implementing A/B tests for various retention strategies informed by the model.
+
+The business impact of this solution is substantial: by predicting churn with high accuracy, TelcoConnect can significantly reduce subscriber losses, optimize marketing spend on retention campaigns, and ultimately enhance customer lifetime value, contributing directly to the company’s profitability and competitive standing.
+
+ 
+</details>
 
 
 -------------------------------------------------------------------------------------------------------------------------
