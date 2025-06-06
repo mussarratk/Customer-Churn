@@ -1,6 +1,8 @@
 # Telecom Customer-Churn Project AI/ML- Framework AML SDK V2
 - Use : Churn_Modeling.csv
-in 3 framework - https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/supplement/XtdhM/practice-activity-implementing-a-model-for-business-deployment
+in 3 framework
+- https://www.coursera.org/learn/ai-and-machine-learning-algorithms-and-techniques/supplement/yFgdb/walkthrough-creating-an-ai-ml-development-plan-for-customer-churn-prediction
+ - https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/supplement/XtdhM/practice-activity-implementing-a-model-for-business-deployment
 https://docs.google.com/spreadsheets/d/1u_25Gd_lli0m9SQwrfNZfDM0U4rJoiFz8gLRuFps1us/edit?gid=1228681343#gid=1228681343
 https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/y5Vv5/introduction-to-deployment-platforms
 ![image](https://github.com/user-attachments/assets/e294ff86-5b2b-4d84-821d-2896ef452c61)
