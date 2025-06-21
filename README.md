@@ -30,6 +30,8 @@ Best ROC AUC score (from cross-validation): 0.8435
 ![image](https://github.com/user-attachments/assets/379e504d-e020-4f58-a33a-6f1354932201)
 
 <details>
+
+https://www.coursera.org/learn/coding-and-automation-for-data-analysis-with-generative-ai/lecture/mO9VD/project-showcase-predicting-customer-churn-with-generative-ai
  
 ## Take Reference
 - https://github.com/Azure/MachineLearningDesigner/blob/master/articles/samples/binary-classification-customer-relationship-prediction.md
